@@ -11,12 +11,10 @@ if [ -x "$(command -v wal)" ]; then
     [ ! -f $HOME/.config/wal/templates/color.leftwm-theme.toml ] ; then
         cp -f $HOME/.config/leftwm/themes/current/template-wal/color.leftwm-theme.toml  $HOME/.config/wal/templates
   fi
-    my_array=($HOME/.config/leftwm/themes/current/backgrounds/*)
-        ####my_array=(/usr/share/backgrounds/*)
+    my_array=($HOME/.config/i3/backgrounds/*)
 
-     wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]} -a 80
-    cat ~/.cache/wal/color.leftwm-theme.toml &&
-    ####bat ~/.cache/wal/color.leftwm-theme.ron &&               
+    wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]} -a 80
+    cat ~/.cache/wal/color.leftwm-theme.toml &&              
     cp -f ~/.cache/wal/color.leftwm-theme.toml $HOME/.config/leftwm/themes/current/theme.toml &&
     
     leftwm command "LoadTheme $HOME/.config/leftwm/themes/current/theme.ron"
@@ -26,6 +24,6 @@ else
 
   # Set background
   if [ -x "$(command -v feh)" ]; then
-    feh --randomize --bg-fill $HOME/.config/leftwm/themes/current/backgrounds/*
+    feh --randomize --bg-fill $HOME/.config/i3/backgrounds/*
   fi
 fi
