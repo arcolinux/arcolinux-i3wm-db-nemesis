@@ -516,6 +516,7 @@ for_window [class="Hexchat"] floating disable
 for_window [class="Imagewriter"] floating enable
 for_window [class="Font-manager"] floating enable
 # for_window [class="qt5ct|Lxappearance] floating enable
+for_window [class="Mintstick.py"] floating disable
 for_window [class="Nitrogen"] floating disable
 for_window [class="Pavucontrol"] floating disable
 for_window [class="Peek"] floating enable
