@@ -39,7 +39,7 @@ format-offset =
 
 [colors]
 background = #60000000
-foreground = ${xrdb:color7:#222}
+foreground = #eeeeee
 foreground-active = #6790EB
 occupied = #cccccc
 occupied-active = #b3c7f5
@@ -917,8 +917,8 @@ interval = 1024
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix = "  "
-format-prefix-foreground = #0084FF
-format-underline = #0084FF
+;format-prefix-foreground = #0084FF
+;format-underline = #0084FF
 
 ################################################################################
 
