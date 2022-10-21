@@ -31,7 +31,8 @@ set $right semicolon
 ################# Single and Dual screen
 
 # current displays
-exec --no-startup-id xrandr --output DP0 --right-of HDMI-0 --auto
+#exec --no-startup-id xrandr --output DP-0 --right-of HDMI-0 --auto
+exec --no-startup-id xrandr --output HDMI-1 --right-of HDMI-0 --auto
 
 # setting variables for later use
 # use xrandr and/or arandr to know the names of your monitors
@@ -59,8 +60,8 @@ exec --no-startup-id xrandr --output DP0 --right-of HDMI-0 --auto
 
 # current setup
 
-set $firstMonitor HDMI-1
-set $secondMonitor HDMI-2
+set $firstMonitor HDMI-0
+set $secondMonitor HDMI-1
 
 # Other Examples
 
