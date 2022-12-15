@@ -1149,8 +1149,8 @@ type = custom/text
 content = "  襤  "
 content-foreground = ${colors.foreground}
 content-background = ${colors.background}
-click-left = ~/.config/i3/polybar/scripts/checkmenu.sh
-click-right = ~/.config/i3/polybar/scripts/checkmenu.sh
+click-left = /usr/bin/archlinux-logout
+click-right = /usr/bin/archlinux-logout
 
 ################################################################################
 
