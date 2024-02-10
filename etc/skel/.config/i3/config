@@ -140,7 +140,6 @@ bindsym $mod+F12 exec --no-startup-id rofi -show drun -font "Noto Sans 13"
 # ArcoLinux Logout
 bindsym $mod+Shift+e exec --no-startup-id archlinux-logout
 bindsym $mod+X exec --no-startup-id archlinux-logout
-archlinux-logout
 bindsym $mod+Shift+X exec --no-startup-id arcolinux-powermenu
 
 ################# reload changed configuration     
